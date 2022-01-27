@@ -71,15 +71,10 @@ footer {
 .img__bg {
     background: url("../images/image-header-mobile.jpg");
     background-size: cover;
+    background-color: hsl(277, 64%, 61%);
+    background-blend-mode: multiply;
     background-repeat: no-repeat;
     height: 25rem;
-    border-radius: .7rem .7rem 0rem 0;
-}
-
-.overlay {
-    position: relative;
-    background-color: hsl(277, 64%, 61%, 0.6);
-    height: 100%;
     border-radius: .7rem .7rem 0rem 0;
 }
 
@@ -139,16 +134,15 @@ footer {
     .img__bg {
         background: url("../images/image-header-desktop.jpg");
         background-size: cover;
+        background-blend-mode: multiply;
         background-repeat: no-repeat;
         grid-column: 2/3;
         grid-auto-flow: column;
         height: 100%;
         border-radius: 0rem .7rem .7rem 0rem;
+        background-color: hsl(277, 64%, 61%);
     }
     
-    .overlay {
-        border-radius: 0rem .7rem .7rem 0rem;
-    }
 
     h1 {
         margin: 2rem 0 ;
