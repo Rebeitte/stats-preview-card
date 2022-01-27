@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://stats-review-jr.netlify.app/)
+- Solution URL: [Github](https://github.com/Rebeitte/stats-preview-card)
 - Live Site URL: [Netlify](https://stats-review-jr.netlify.app/)
 
 ## My process
