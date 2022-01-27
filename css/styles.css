@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    /*Colours*/
+
+    --Verydarkblue:hsl(233, 47%, 7%);
+    --Darkdesaturatedblue:hsl(244, 38%, 16%);
+    --Softviolet:hsl(277, 64%, 61%);
+
+    --White: hsl(0, 0%, 100%);
+    --Slightlytransparentwhite: hsla(0, 0%, 100%, 0.75);
+    --Slightlytransparentwhiteh: hsla(0, 0%, 100%, 0.6);
+
+    /*Typography*/
+
+    --fontheadings: 'Inter', sans-serif;
+    --fontp: 'Lexend Deca', sans-serif;
+
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Verydarkblue);
+    font-family: var(--fontheadings);
+    color: var(--White);
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-weight: 700;
+    margin-top: 3rem;
+}
+
+h2 {
+    margin: 2rem 0 0 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Softviolet);
+}
+
+footer {
+    color: var(--Slightlytransparentwhiteh);
+    font-family: var(--fontp);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    margin: 25% auto 0 auto;
+    width: 95%;
+}
+
+.card {
+    background-color: var(--Darkdesaturatedblue);
+    border-radius: .7rem;
+    margin: 0 1rem;
+    padding-bottom: 3rem;
+}
+
+.img__bg {
+    background: url("../images/image-header-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+    border-radius: .7rem .7rem 0rem 0;
+}
+
+.overlay {
+    position: relative;
+    background-color: hsl(277, 64%, 61%, 0.6);
+    height: 100%;
+    border-radius: .7rem .7rem 0rem 0;
+}
+
+.headings {
+    margin: 0 1.2rem;
+}
+
+.main__p {
+    margin: 0 1rem;
+    color: var(--Slightlytransparentwhite);
+    line-height: 1.5;
+    margin-bottom: 4rem;
+    font-family: var(--fontp);
+}
+
+.description {
+    text-transform: uppercase;
+    font-family: var(--fontp);
+    color: var(--Slightlytransparentwhiteh);
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.insights {
+    color: var(--Softviolet);
+}
+
+.last {
+    margin-bottom: 0rem;
+}
+
+
+.attribution {
+    margin-top: 1rem;
+}
+
+
+/*Desktop*/
+
+@media (min-width: 1000px) {
+    .container {
+        margin: 10% auto 0 auto;
+        text-align: left;
+        width: 60%;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: column;
+        border-radius: .7rem .7rem .7rem .7rem;
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .img__bg {
+        background: url("../images/image-header-desktop.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-column: 2/3;
+        grid-auto-flow: column;
+        height: 100%;
+        border-radius: 0rem .7rem .7rem 0rem;
+    }
+    
+    .overlay {
+        border-radius: 0rem .7rem .7rem 0rem;
+    }
+
+    h1 {
+        margin: 2rem 0 ;
+    }
+
+    .main__p {
+        font-size: 1.2rem;
+        padding-right: 6rem;
+        margin: 0;
+
+    }
+    .headings {
+        grid-column: 1/2;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        flex-basis: calc(30% - 2rem);
+        padding: 2rem 4rem 3rem 4rem;
+        margin-top: 2rem;
+    }
+
+
+    .block {
+        display: flex;
+        justify-content: space-around;
+        margin: 3rem 0;
+    }
+
+    .blocks {
+        margin-left: 0rem;
+        flex-basis: 33.3%;
+    }
+}
